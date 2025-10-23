@@ -1,0 +1,71 @@
+﻿namespace ConsoleApp25
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Pincode
+            for (int i = 5; i >= 0; i--)
+            {
+                Console.WriteLine("Username: ");
+                string username = Console.ReadLine();
+                Console.Write("Pass: ");
+                string pincode = Console.ReadLine();
+
+                //username and pass check
+                if (pincode == "1234567" && username == "ilina11")
+                {
+                    //Symbol check
+                    Console.WriteLine("Security symbol: ");
+                    char passSymbol = char.Parse(Console.ReadLine());
+                    if (passSymbol  == 'P')
+                    {
+                        Console.WriteLine("You may enter!");
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong symbol, you cannot enter!");
+                        break;
+                    }
+
+
+
+
+
+
+
+                        Console.WriteLine("Facebook pincode!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Wrong Ping! Atemps left" + i);
+                }
+
+            }
+
+
+
+
+
+           for (int i = 1; i >= 1; i++)
+            {
+                Console.Write("pincode: ");
+                string pincode = (Console.ReadLine());
+                if (pincode == "0000")
+                {
+                    Console.WriteLine("You may widthdraw!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Wrong Ping! Atemps left" + i);
+
+                }
+                }
+
+            }
+        }
+    }
+
